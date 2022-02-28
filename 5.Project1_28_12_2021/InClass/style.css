@@ -1,0 +1,95 @@
+/* Default styling */
+
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 2rem;
+  
+
+}
+/* Descending selector ,combinator*/
+header h1{
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-weight: 400;
+
+}
+header{
+    /* FlexBox */
+    /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/#background */
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 3rem;  
+
+    /* first(0) ->top and bottom  &second(10px)->left and right */
+      /* from reference to default sizze how much times bigger need */
+}
+nav{
+    /* giving postion relative allows to move from its postion */
+    position: relative;
+
+    top:1rem;
+    right:4rem;
+    width: 25rem;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+li{
+    /* for removing styling in list(eg removing dots in list) */
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+/* class selector */
+.showcase_img{
+    /* view port width(vw) increases and decreases dynamically  */
+    /* https://alligator.io/css/viewport-units/ */
+    width:95vw;
+    margin:1rem;
+    
+}
+article{
+display: flex;
+/* justify-content:space-between;
+padding: 1rem; */
+
+}
+.container{
+    /* centering the text */
+    text-align:center;
+    margin: 1.5rem;
+    /* padding: 2rem; */
+    font-size:1.5rem;
+}
+
+h2{
+    font-weight: 600;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 4rem;
+   display: flex;
+   /* for horizontally centering */
+   justify-content: center;
+   /* For vertically centering */
+   align-items: center;
+   font-size: 1.5rem;
+}
+
+a{
+/* for removing underline in link */
+    text-decoration: none;
+}
+
+/* hover effect ->change properties(color,size) when mouse point on it */
+/* : is used to access pseudo classes (css given different classes for different properties eg: hover class)  */
+a:hover{
+    color:brown;
+    font-size:2rem;
+}
